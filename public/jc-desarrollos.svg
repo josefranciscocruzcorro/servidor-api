@@ -1,0 +1,16 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(1.1594939231872559,0,0,1.1182795763015747,-20.253236152231693,0) " font-style="italic" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_1" y="226.484375" x="102.365483" stroke-width="0" fill="#0000bf">JC</text>
+  <text stroke="#000" transform="matrix(1.3435114622116089,0,0,2.1842105388641357,-55.80987787619233,-326.84210872650146) " font-weight="bold" font-style="italic" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="34" id="svg_2" y="325.379801" x="126.54102" stroke-width="3" fill="#3f007f">DESARROLLOS</text>
+  <path id="svg_3" d="m140.5,291.4375c72,2 137,-27 137,-26c0,1 92,6 91.5,5.5625c0.5,0.4375 -62.5,26.4375 -62.5,26.4375c0,0 -238,-8 -166,-6z" stroke-width="1.5" stroke="#000" fill="#bc0000"/>
+ </g>
+</svg>
