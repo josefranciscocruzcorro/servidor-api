@@ -183,7 +183,7 @@ module.exports = (app,User) => {
     });
 
     app.post('/api/perfil',verificarToken(User),(req,res)=>{
-        User.findOne({user: header("user") , token: req.header("token")},"_id user email name rol permisos",function(err,usuario) {
+        User.findOne({user: req.header("user") , token: req.header("token")},"_id user email name rol permisos",function(err,usuario) {
             if (err)
                 res.send(err);
             
