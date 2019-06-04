@@ -14,6 +14,7 @@ mongoose.connect('mongodb://'+argv.db_ip+':'+argv.db_port+'/'+argv.db_name, {use
 
 //Models
 let User = require('./models/User')(mongoose);
+let Loteria = require('./models/Loteria')(mongoose);
 
 //Middlewares
 app.use(express.json());
@@ -28,6 +29,7 @@ app.use((req, res, next) => {
 
 //controllers
 let UserC = require('./controllers/UserController')(app,User);
+let LoteriaC = require('./controllers/LoteriaController')(app,Loteria,User);
 
 //archivos estaticos
 app.use('/',express.static('public'));
