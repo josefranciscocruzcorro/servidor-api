@@ -11,5 +11,22 @@ module.exports = (app,Loteria,User) => {
             res.json(numeros);
         });
     });
+
+    app.post('/api/loteria',verificarToken(User),permisosUser(User,["Agregar Loteria"]),(req,res)=>{
+        if(!req.body.numero || req.body.numero.length != 6)
+            res.json({
+                msg_servidor: 'Ingrese un numero de 6 digitos.'
+            });
+
+        Loteria.create({
+            numero: req.body.numero
+        },function(err,loteria) {
+            if(err)
+                res.send(err);
+            res.json({
+                msg_servidor_success: 'Numero agregado'
+            });
+        });
+    });
     
 }
