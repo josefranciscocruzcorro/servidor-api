@@ -29,6 +29,7 @@ app.use((req, res, next) => {
 
 //controllers
 let UserC = require('./controllers/UserController')(app,User);
+let PageC = require('./controllers/PageController')(app,User);
 let LoteriaC = require('./controllers/LoteriaController')(app,Loteria,User);
 
 //archivos estaticos
