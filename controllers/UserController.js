@@ -130,7 +130,9 @@ module.exports = (app,User) => {
             if(usuario){
                 res.json({
                     user: usuario.user,
-                    token: newToken
+                    token: newToken,
+                    rol: usuario.rol,
+                    permisos: usuario.permisos
                 });
             }else{
                 res.json({
